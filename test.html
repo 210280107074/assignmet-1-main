@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .first {
+      /* background-color: aliceblue; */
+      height: 70px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .company-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .company-logo img {
+      margin-right: 15px;
+    }
+
+    .search-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-container img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .subdiv {
+      display: flex;
+      flex: 1;
+    }
+
+
+    .side-bar {
+      /* background-color: #f0f8ff; */
+      width: 240px;
+      height: 100%;
+      padding-top: 20px;
+      /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    }
+
+    .side-sub-div {
+      background-color: #ffffff;
+      padding: 0 20px;
+    }
+
+    .side-bar ul {
+      list-style: none;
+    }
+
+    .side-bar li {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+    }
+
+    .side-bar li:hover {
+      background-color: #eef3f7;
+    }
+
+    .side-bar li img {
+      width: 20px;
+      margin-right: 15px;
+    }
+
+    .third {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .content-area {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .content-area h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content-area p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .search-icon{
+        margin-left: -60%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="first">
+      <div class="nav-container">
+        <div class="company-logo">
+          <img src="images/menu-bar.svg" id="menu-bar" alt="Menu" />
+          <img src="images/header-logo.svg" id="header-logo" alt="Logo" />
+        </div>
+        <div class="search-icon">
+          <img src="images/search-icon.svg" id="s-icon" alt="Search" />
+          <label>Search</label>
+          <img src="images/notification-icon.svg" id="noti-img" alt="Notification" />
+        </div>
+        <div class="profile-container">
+          <img src="images/profile.png" alt="Profile" />
+          <label>John Doe</label>
+          <img src="images/downward-arrow.svg" alt="Arrow" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar and Content Section -->
+    <div class="subdiv">
+      <!-- Sidebar -->
+      <div class="side-bar">
+        <div class="side-sub-div">
+          <ul>
+            <li>
+              <img src="images/dashboard-default.svg" alt="Dashboard" />
+              <label>Dashboard</label>
+            </li>
+            <li>
+              <img src="images/graph-default.svg" alt="Analysis" />
+              <label>Analysis</label>
+            </li>
+            <li>
+              <img src="images/inbox-default.svg" alt="Inbox" />
+              <label>Inbox</label>
+            </li>
+            <li>
+              <img src="images/clock-default.svg" alt="History" />
+              <label>History</label>
+            </li>
+            <li>
+              <img src="images/user-default.svg" alt="Users" />
+              <label>Users</label>
+            </li>
+            <li>
+              <img src="images/maintenance-default.svg" alt="Maintenance" />
+              <label>Maintenance</label>
+            </li>
+            <li>
+              <img src="images/setting-default.svg" alt="Settings" />
+              <label>Settings</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="third">
+        <div class="content-area">
+          <h1>Welcome to the Dashboard</h1>
+          <p>This is the content area where your main information will be displayed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

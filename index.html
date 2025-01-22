@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Roboto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 100px;
+    }
+
+    .first-div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .first-div img {
+      height: 450px;
+      width: 450px;
+      border-radius: 50%;
+      border: 10px solid white;
+      box-shadow: 0px 4px 31px #0000000A;
+    }
+
+    .sub-div img {
+      width: 272px;
+      height: 58px;
+    }
+
+    .second-div {
+      flex: 1;
+      display: grid;
+      gap: 15px;
+      min-height: 100px;
+      overflow: hidden;
+    }
+
+    .head-text {
+      height: 100px;
+      width: 500px;
+    }
+
+    .head-text label {
+      font: normal normal 300 40px/47px Roboto;
+    }
+
+    .head-text label span {
+      color: #C8242F;
+    }
+
+    form {
+      width: 429px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-text {
+      margin: 10px;
+    }
+
+    .form-text label {
+      font: normal normal normal 25px/33px Roboto;
+    }
+
+    input {
+      height: 49px;
+      width: 429px;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      font-size: 16px;
+      border: 1px solid gray;
+    }
+
+    .btn-n-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+     
+    }
+
+    button {
+      background-color: #C8242F;
+      color: white;
+      border: none;
+      border-radius: 25%;
+      font-size: 16px;
+      cursor: pointer;
+      width: 138px;
+      height: 45px;
+      overflow: hidden;
+    }
+
+    a {
+      color: #C8242F;
+      text-decoration: none;
+      font: normal normal normal 15px/20px Roboto;
+      
+    }
+
+    button:hover {
+      background-color: #a21e28;
+    }
+
+    .form-text {
+      margin-left: 0px;
+      margin-bottom: 23.45px;
+    }
+
+    .form {
+      /* margin-top: 0px; */
+      margin: 23.45px;
+      padding: 0px;
+    }
+
+
+
+    a:hover {
+      text-decoration: none;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="first-div">
+      <img src="./images/hero-image.png" alt="Hero Image">
+    </div>
+
+    <div class="second-div">
+      <div class="sub-img">
+        <img src="./images/logo.svg" alt="Header Logo">
+      </div>
+
+      <div class="head-text">
+        <label for="head-text">We are <span>experts</span> in Business, Marketing, Growth, & Sales.</label>
+      </div>
+
+      <div class="login-form">
+        <form action="">
+          <div class="form-text">
+            <label for="form-text">Login into your Account</label>
+          </div>
+
+          <input type="text" placeholder="Username"><br>
+          <input type="password" placeholder="Password"><br>
+          <div class="btn-n-link">
+            <button type="submit">Login</button>
+            <a href="">Forget Password?</a>
+          </div>
+          <div>
+            <label for="register">Are you a new Member? <a href="">Register here</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
